@@ -1,1 +1,96 @@
+body {
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #ff0000, #ffffff);
+    background-repeat: 0;
+    background-attachment: fixed;
+}
 
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.pokeball-icon {
+    width: 30px; /* Adjust size as needed */
+    vertical-align: middle;
+    margin-right: 10px;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+.welcome-text {
+    font-size: 2em; /* Larger font size */
+    font-weight: bold;
+    color: #ffee00; /* Ensure visibility on the background */
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #1e00ff,
+        1px 1px 0 #2f00ff; /* Text shadow for better readability */
+
+    margin-top: 20px; /* Increased margin for better spacing */
+    padding: 10px; /* Padding for better visual spacing */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+    border-radius: 10px; /* Rounded corners for aesthetic appeal */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.pokeball-spin {
+    animation-name: spin;
+}
+
+.card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pokemon-card {
+    max-width: 100%;
+    overflow:hidden;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+
+#pokemonAbilities {
+    margin-top: 10px;
+}
+
+#searchBar {
+    border-radius: 20px 0 0 20px;
+    outline: none;
+}
+
+.btn-outline-secondary {
+    border-radius: 0 20px 20px 0;
+    background-color: #ff0000; 
+    color: white;
+}
+
+.progress-bar {
+    background-color: #f08030;
+}
+
+.type-normal { color: #A8A77A; }
+.type-fire { color: #EE8130; }
+.type-water { color: #6390F0; }
+.type-electric { color: #F7D02C; }
+.type-grass { color: #7AC74C; }
+.type-ice { color: #96D9D6; }
+.type-fighting { color: #C22E28; }
+.type-poison { color: #A33EA1; }
+.type-ground { color: #E2BF65; }
+.type-flying { color: #A98FF3; }
+.type-psychic { color: #F95587; }
+.type-bug { color: #A6B91A; }
+.type-rock { color: #B6A136; }
+.type-ghost { color: #735797; }
+.type-dragon { color: #6F35FC; }
+.type-dark { color: #705746; }
+.type-steel { color: #B7B7CE; }
+.type-fairy { color: #D685AD; }
